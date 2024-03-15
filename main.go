@@ -20,8 +20,9 @@ func main() {
 	smux.Handle("/users/", users)
 
 	server := &http.Server{
-		Addr:    ":8080",
-		Handler: smux,
+		Addr:     ":8080",
+		ErrorLog: logger,
+		Handler:  smux,
 
 		ReadTimeout:  1 * time.Second,
 		WriteTimeout: 1 * time.Second,
