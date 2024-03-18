@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-var ErrorUserNotFound = errors.New("User Not Found!")
+var UserNotFoundError = errors.New("User Not Found!")
 
 type User struct {
 	ID        int       `json:"-"`
@@ -31,7 +31,7 @@ func (ul *UserList) findByID(id int) (int, error) {
 		}
 	}
 
-	return -1, ErrorUserNotFound
+	return -1, UserNotFoundError
 }
 
 func (ul *UserList) ToJSON(w io.Writer) error {
