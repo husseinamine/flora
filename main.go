@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/husseinamine/florasrv/apps"
-	"github.com/husseinamine/florasrv/routes"
+	"github.com/husseinamine/flora/apps"
+	"github.com/husseinamine/flora/routes"
 )
 
 func main() {

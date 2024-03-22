@@ -1,4 +1,4 @@
-module github.com/husseinamine/florasrv
+module github.com/husseinamine/flora
 
 go 1.21.0
 

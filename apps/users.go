@@ -9,7 +9,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/husseinamine/florasrv/controllers"
+	"github.com/husseinamine/flora/controllers"
 )
 
 var BadRequestError = errors.New("Bad Request!")

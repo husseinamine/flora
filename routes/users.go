@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/husseinamine/florasrv/apps"
+	"github.com/husseinamine/flora/apps"
 )
 
 type Users struct {
